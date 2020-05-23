@@ -1,3 +1,5 @@
+!global $imgUrl = "https://raw.githubusercontent.com/brunosouzas/brunosouzas-plantUML/master"
+
 ' Colors
 ' ##################################
 !define MULESOFT_BLUE_COLOR #00A1DF
@@ -29,6 +31,14 @@ skinparam Arrow {
     Color #000000
     FontColor #000000
     FontSize 12
+}
+
+skinparam class {
+	defaultTextAlignment left
+    BackgroundColor MULESOFT_BG_COLOR
+    BorderColor MULESOFT_MEDIUM_GREY_COLOR
+    StereotypeFontSize 12
+    shadowing false
 }
 
 !definelong GeneralEntityColoring(e_stereo)

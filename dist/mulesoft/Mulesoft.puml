@@ -1,8 +1,8 @@
 'Muleosft Logo
-!$muleBlueLogo = "../../../../../../../../Users/brunosouzas/Documents/repository/com/brunosouzas/repository/diagram/plantUml/brunosouzas-plantUML/dist/mulesoft/muleBlueLogo.png"
-!$muleBlackLogo = "../../../../../../../../Users/brunosouzas/Documents/repository/com/brunosouzas/repository/diagram/plantUml/brunosouzas-plantUML/dist/mulesoft/muleBlackLogo.png"
-!$muleBlueDunkey = "../../../../../../../../Users/brunosouzas/Documents/repository/com/brunosouzas/repository/diagram/plantUml/brunosouzas-plantUML/dist/mulesoft/muleBlueDunkey.png"
-!$muleBlackDunkey = "../../../../../../../../Users/brunosouzas/Documents/repository/com/brunosouzas/repository/diagram/plantUml/brunosouzas-plantUML/dist/mulesoft/muleBlackDunkey.png"
+!$muleBlueLogo = $imgUrl + "/dist/mulesoft/muleBlueLogo.png"
+!$muleBlackLogo = $imgUrl + "/dist/mulesoft/muleBlackLogo.png"
+!$muleBlueDunkey = $imgUrl + "/dist/mulesoft/muleBlueDunkey.png"
+!$muleBlackDunkey = $imgUrl + "/dist/mulesoft/muleBlackDunkey.png"
 
 !definelong Layer(e_alias, e_layer) 
 	rectangle " " <<e_layer>> as e_alias

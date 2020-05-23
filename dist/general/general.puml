@@ -1,6 +1,6 @@
 'General Logo
-!$userFemaleLogo = "../../../../../../../../Users/brunosouzas/Documents/repository/com/brunosouzas/repository/diagram/plantUml/brunosouzas-plantUML/dist/general/CoreBlue_UserFemale.png"
-!$userMaleLogo = "../../../../../../../../Users/brunosouzas/Documents/repository/com/brunosouzas/repository/diagram/plantUml/brunosouzas-plantUML/dist/general/CoreBlue_UserMale.png"
+!$userFemaleLogo = $imgUrl + "/dist/general/CoreBlue_UserFemale.png"
+!$userMaleLogo = $imgUrl + "/dist/general/CoreBlue_UserMale.png"
 
 GeneralEntityColoring(user)
 !define userFemale(e_alias, e_label, e_techn) GeneralEntity(e_alias, e_label, e_techn, $userFemaleLogo, user)
