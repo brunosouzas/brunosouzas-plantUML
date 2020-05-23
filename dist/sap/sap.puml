@@ -2,7 +2,6 @@
 !$sapBlueLogo = $imgUrl + "/dist/sap/sapBlueLogo.png"
 !$sapBlackLogo = $imgUrl + "/dist/sap/sapBlackLogo.png"
 
-
 GeneralEntityColoring(SAP)
 !define sap(e_alias, e_label, e_techn) GeneralEntity(e_alias, e_label, e_techn, $sapBlueLogo, SAP)
 !define sap(e_alias, e_label, e_techn, e_descr) GeneralEntity(e_alias, e_label, e_techn, e_descr, $sapBlueLogo, SAP)
