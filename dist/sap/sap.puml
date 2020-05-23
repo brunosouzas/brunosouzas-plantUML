@@ -1,5 +1,5 @@
 'SAP Logo
-!$sapBlueLogo = $imgUrl + "/dist/sap/sapBlueLogo.png"
+!$sapBlueLogo = $imgUrl + "/dist/sap/sapLogo.png"
 !$sapBlackLogo = $imgUrl + "/dist/sap/sapBlackLogo.png"
 
 GeneralEntityColoring(SAP)
