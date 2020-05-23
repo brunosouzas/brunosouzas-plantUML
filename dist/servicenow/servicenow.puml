@@ -1,0 +1,15 @@
+'servicenow Logo
+!$servicenowLogo = "../../../../../../../../Users/brunosouzas/Documents/repository/com/brunosouzas/repository/diagram/plantUml/brunosouzas-plantUML/dist/servicenow/servicenow.png"
+!$nowLogo = "../../../../../../../../Users/brunosouzas/Documents/repository/com/brunosouzas/repository/diagram/plantUml/brunosouzas-plantUML/dist/servicenow/now.png"
+!$serviceNowBallLogo = "../../../../../../../../Users/brunosouzas/Documents/repository/com/brunosouzas/repository/diagram/plantUml/brunosouzas-plantUML/dist/servicenow/CoreBlue_ServiceNow.png"
+
+
+GeneralEntityColoring(ServiceNow)
+!define servicenow(e_alias, e_label, e_techn) GeneralEntity(e_alias, e_label, e_techn, $servicenowLogo, ServiceNow)
+!define servicenow(e_alias, e_label, e_techn, e_descr) GeneralEntity(e_alias, e_label, e_techn, e_descr, $servicenowLogo, ServiceNow)
+
+!define snow(e_alias, e_label, e_techn) GeneralEntity(e_alias, e_label, e_techn, $nowLogo, ServiceNow)
+!define snow(e_alias, e_label, e_techn, e_descr) GeneralEntity(e_alias, e_label, e_techn, e_descr, $nowLogo, ServiceNow)
+
+!define serviceNow(e_alias, e_label, e_techn) GeneralEntity(e_alias, e_label, e_techn, $serviceNowBallLogo, ServiceNow)
+!define serviceNow(e_alias, e_label, e_techn, e_descr) GeneralEntity(e_alias, e_label, e_techn, e_descr, $serviceNowBallLogo, ServiceNow)
