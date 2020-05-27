@@ -2,7 +2,6 @@
 !$servicenowLogo = $imgUrl + "/dist/servicenow/servicenow.png"
 !$nowLogo = $imgUrl + "/dist/servicenow/now.png"
 
-
 GeneralEntityColoring(ServiceNow)
 !define serviceNow(e_alias, e_label, e_techn) GeneralEntity(e_alias, e_label, e_techn, $servicenowLogo, ServiceNow)
 !define serviceNow(e_alias, e_label, e_techn, e_descr) GeneralEntity(e_alias, e_label, e_techn, e_descr, $servicenowLogo, ServiceNow)

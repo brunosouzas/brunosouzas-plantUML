@@ -19,7 +19,6 @@
 	}
 !enddefinelong
 
-
 GeneralEntityColoring(Mulesoft)
 !define mulesoft(e_alias, e_label, e_techn) GeneralEntity(e_alias, e_label, e_techn, $muleBlueLogo, Mulesoft)
 !define mulesoft(e_alias, e_label, e_techn, e_descr) GeneralEntity(e_alias, e_label, e_techn, e_descr, $muleBlueLogo, Mulesoft)
