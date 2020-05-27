@@ -7,19 +7,25 @@
 !include pathBrUml/dist/mulesoft/Mulesoft.puml
 !include pathBrUml/dist/sap/sap.puml
 !include pathBrUml/dist/general/general.puml
+!include pathBrUml/dist/docusign/docusign.puml
+!include pathBrUml/dist/servicenow/servicenow.puml
 
 LAYOUT_TOP_DOWN
 
 mulesoft(apiMgt, "API Manager", "brazil")
+serviceNow(snow, "CSM", "servicePortal")
 
 systemLayer(lsys) {
 	mulesoftDunkey(cSys, "Proxy API ", "order-sys", "https://muleapi.com/order")
 	sap(sPO_cSys, "Rest API", "order-sys", "http://sapapi.com/order")
 }
 
-apiMgt --> lsys
+DocuSign(dsign, "Deal", "electronic agreements")
+
+snow --> cSys
 cSys --> sPO_cSys
 sap(ecc, "ECC", "BSAP")
 sPO_cSys --> ecc
+cSys --> dsign
 
 @enduml
