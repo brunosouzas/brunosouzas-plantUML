@@ -1,46 +1,25 @@
-@startuml 
+@startuml ordersys_C1
 
-!define path /Users/brunosouzas/Documents/repository/com/brunosouzas/repository/diagram/plantUml/brunosouzas-plantUML
+'allow_mixing
 
-!includeurl path/MulesoftCommon.puml
-!includeurl path/dist/mulesoft/Mulesoft.puml
-'!include path/MulesoftSimplified.puml
+!define pathBrUml https://raw.githubusercontent.com/brunosouzas/brunosouzas-plantUML/master
+!include pathBrUml/GeneralCommon.puml
+!include pathBrUml/dist/mulesoft/Mulesoft.puml
+!include pathBrUml/dist/sap/sap.puml
+!include pathBrUml/dist/general/general.puml
 
-!includeurl path/SAPCommon.puml
-!includeurl path/dist/sap/sap.puml
+LAYOUT_TOP_DOWN
 
-!includeurl path/servicenowCommon.puml
-!includeurl path/dist/servicenow/servicenow.puml
-
-
-title Service Portal
-
-snow(sn2, "CSM", "service portal", "portal servicos cliente") 
-servicenow(sn1, "CSM", "service portal", "portal servicos clientes")
-
-experienceLayer(lExp) {
-	mulesoftSymbol(api3, "API Rest", "Service Portal", "https://api.br.yara.com/serviceportal-exp")
-}
-
-processLayer(lprc) {
-	mulesoftBlue(api4, "API Rest", "sales order", "https://api.br.yara.com/salesorder-prc")
-}
+mulesoft(apiMgt, "API Manager", "brazil")
 
 systemLayer(lsys) {
-	mulesoftBlue(api1, "API Proxy", "order system", "Order System") 
-	sap(api2, "API Rest", "order system", "Order System")
-	mulesoftBlack(api5, "API Proxy", "order system", "Order System")
+	mulesoftDunkey(cSys, "Proxy API ", "order-sys", "https://muleapi.com/order")
+	sap(sPO_cSys, "Rest API", "order-sys", "http://sapapi.com/order")
 }
 
-sap(api6, "RFC", "zorder09", "functionto get order")
-
-sn2 --> api3
-sn1 --> api3
-api3 --> api4 
-api4 --> api1
-api4 --> api5
-api1 --> api2
-api2 --> api6
-api5 --> api6
+apiMgt --> lsys
+cSys --> sPO_cSys
+sap(ecc, "ECC", "BSAP")
+sPO_cSys --> ecc
 
 @enduml
