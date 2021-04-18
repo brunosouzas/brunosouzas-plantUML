@@ -6,7 +6,6 @@
 !include pathBrUml/GeneralCommon.puml
 !include pathBrUml/dist/mulesoft/Mulesoft.puml
 !include pathBrUml/dist/sap/sap.puml
-!include pathBrUml/dist/general/general.puml
 !include pathBrUml/dist/docusign/docusign.puml
 !include pathBrUml/dist/servicenow/servicenow.puml
 !include pathBrUml/dist/apicbase/apicbase.puml

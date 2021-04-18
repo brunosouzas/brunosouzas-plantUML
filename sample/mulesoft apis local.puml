@@ -1,13 +1,11 @@
-@startuml ordersys_C1ß
+@startuml ordersys_C1
 
 'allow_mixing
 
 !define pathBrUml /Users/bruno.souza/workspace/plantuml/brunosouzas-plantUML
 !include pathBrUml/GeneralCommon.puml
 !include pathBrUml/dist/mulesoft/Mulesoft.puml
-!include pathBrUml/dist/mulesoft/Mulesoft_Layer.puml
 !include pathBrUml/dist/sap/sap.puml
-!include pathBrUml/dist/general/general.puml
 !include pathBrUml/dist/docusign/docusign.puml
 !include pathBrUml/dist/servicenow/servicenow.puml
 !include pathBrUml/dist/apicbase/apicbase.puml
