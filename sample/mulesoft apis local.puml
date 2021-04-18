@@ -1,0 +1,35 @@
+@startuml ordersys_C1ß
+
+'allow_mixing
+
+!define pathBrUml /Users/bruno.souza/workspace/plantuml/brunosouzas-plantUML
+!include pathBrUml/GeneralCommon.puml
+!include pathBrUml/dist/mulesoft/Mulesoft.puml
+!include pathBrUml/dist/sap/sap.puml
+!include pathBrUml/dist/general/general.puml
+!include pathBrUml/dist/docusign/docusign.puml
+!include pathBrUml/dist/servicenow/servicenow.puml
+!include pathBrUml/dist/apicbase/apicbase.puml
+
+LAYOUT_TOP_DOWN
+
+mulesoft(apiMgt, "API Manager", "brazil")
+serviceNow(snow, "CSM", "servicePortal")
+
+systemLayer(lsys) {
+	mulesoftDunkey(cSys, "Proxy API ", "order-sys", "https://muleapi.com/order")
+	sap(sPO_cSys, "Rest API", "order-sys", "http://sapapi.com/order")
+}
+
+DocuSign(dsign, "Deal", "electronic agreements")
+apicbase(apic, "Ingredient", "coconut")
+
+snow --> cSys
+cSys --> sPO_cSys
+sap(ecc, "ECC", "BSAP")
+sPO_cSys --> ecc
+cSys -l-> dsign
+cSys -r-> apic
+
+
+@enduml
