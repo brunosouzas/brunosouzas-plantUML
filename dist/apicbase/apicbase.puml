@@ -2,5 +2,5 @@
 !$apicbaseLogo = $imgUrl + "/dist/apicbase/apicbase.png"
 
 GeneralEntityColoring(apicbase)
-!define apicabseSymbol(e_alias, e_label, e_techn) GeneralEntity(e_alias, e_label, e_techn, $apicbaseLogo, apicbase)
-!define apicabseSymbol(e_alias, e_label, e_techn, e_descr) GeneralEntity(e_alias, e_label, e_techn, e_descr, $apicbaseLogo, apicbase)
+!define apicabse(e_alias, e_label, e_techn) GeneralEntity(e_alias, e_label, e_techn, $apicbaseLogo, apicbase)
+!define apicabse(e_alias, e_label, e_techn, e_descr) GeneralEntity(e_alias, e_label, e_techn, e_descr, $apicbaseLogo, apicbase)
