@@ -9,6 +9,7 @@
 !include pathBrUml/dist/general/general.puml
 !include pathBrUml/dist/docusign/docusign.puml
 !include pathBrUml/dist/servicenow/servicenow.puml
+!include pathBrUml/dist/apicbase/apicbase.puml
 
 LAYOUT_TOP_DOWN
 
@@ -22,10 +23,12 @@ systemLayer(lsys) {
 
 DocuSign(dsign, "Deal", "electronic agreements")
 
+
 snow --> cSys
 cSys --> sPO_cSys
 sap(ecc, "ECC", "BSAP")
 sPO_cSys --> ecc
 cSys --> dsign
+
 
 @enduml
