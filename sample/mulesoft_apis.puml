@@ -27,7 +27,8 @@ snow --> cSys
 cSys --> sPO_cSys
 sap(ecc, "ECC", "BSAP")
 sPO_cSys --> ecc
-cSys --> dsign
+cSys -l-> dsign
+cSys -r-> apic
 
 
 @enduml
